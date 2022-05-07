@@ -1,0 +1,571 @@
+
+
+qset Q___ Q___ r*** qset
+qset A___ A___ r*** qset
+qset S___ S___ r*** qset
+qset R___ R___ r*** qset
+qset L___ L___ r*** qset
+qset 0___ 0___ r*** qset
+qset 1___ 1___ r*** qset
+qset 2___ 2___ r*** qset
+qset 3___ 3___ r*** qset
+qset 4___ 4___ r*** qset
+qset 5___ 5___ r*** qset
+qset 6___ 6___ r*** qset
+qset 7___ 7___ r*** qset
+qset 8___ 8___ r*** qset
+qset 9___ 9___ r*** qset
+qset ;___ ;___ r*** qset
+qset Y___ Y___ r*** qset
+qset N___ N___ r*** qset
+qset $___ $___ r*** qset
+qset ____ ____ l*** qset_int
+
+qset_int Q___ Q___ l**l qset_int
+qset_int A___ A___ l**l qset_int
+qset_int S___ S___ l**l qset_int
+qset_int R___ R___ l**l qset_int
+qset_int L___ L___ l**l qset_int
+qset_int 0___ 0___ l**l qset_int
+qset_int 1___ 1___ l**l qset_int
+qset_int 2___ 2___ l**l qset_int
+qset_int 3___ 3___ l**l qset_int
+qset_int 4___ 4___ l**l qset_int
+qset_int 5___ 5___ l**l qset_int
+qset_int 6___ 6___ l**l qset_int
+qset_int 7___ 7___ l**l qset_int
+qset_int 8___ 8___ l**l qset_int
+qset_int 9___ 9___ l**l qset_int
+qset_int Y___ Y___ l**l qset_int
+qset_int N___ N___ l**l qset_int
+qset_int ;___ ;___ l**l qset_int
+qset_int $___ ____ r*** qmaq2
+
+
+;------------ copia a maquina 2 para a fita 4 e mete um 5 por tras dos nums do Q
+
+qmaq2 Q___ Q___ l*** qmaq2_1
+qmaq2_1 ____ ___Q r**r qmaq2_2
+qmaq2_2 Q___ ___5 r**r qmaq2_4
+qmaq2_2 ____ ___5 r**r qmaq2_5
+
+qmaq_temp ____ ____ r*** qmaq2_5
+
+qmaq2_4 Q___ Q__Q l**r qmaq_temp
+qmaq2_4 0___ ___0 r**r qmaq2_4
+qmaq2_4 1___ ___1 r**r qmaq2_4
+qmaq2_4 2___ ___2 r**r qmaq2_4
+qmaq2_4 3___ ___3 r**r qmaq2_4
+qmaq2_4 4___ ___4 r**r qmaq2_4
+qmaq2_4 5___ ___5 r**r qmaq2_4
+qmaq2_4 6___ ___6 r**r qmaq2_4
+qmaq2_4 7___ ___7 r**r qmaq2_4
+qmaq2_4 8___ ___8 r**r qmaq2_4
+qmaq2_4 9___ ___9 r**r qmaq2_4
+qmaq2_4 A___ ___A r**r qmaq2_4
+qmaq2_4 L___ ___L r**r qmaq2_4
+qmaq2_4 R___ ___R r**r qmaq2_4
+qmaq2_4 S___ ___S r**r qmaq2_4
+qmaq2_4 Y___ ___Y r**r qmaq2_4
+qmaq2_4 N___ ___N r**r qmaq2_4
+qmaq2_4 ;___ ___; r**r qmaq_temp2
+qmaq2_4 ____ ____ **** qmaq2_6
+
+qmaq2_5 Q___ Q___ **** qmaq2_2
+qmaq2_5 0___ ___0 r**r qmaq2_5
+qmaq2_5 1___ ___1 r**r qmaq2_5
+qmaq2_5 2___ ___2 r**r qmaq2_5
+qmaq2_5 3___ ___3 r**r qmaq2_5
+qmaq2_5 4___ ___4 r**r qmaq2_5
+qmaq2_5 5___ ___5 r**r qmaq2_5
+qmaq2_5 6___ ___6 r**r qmaq2_5
+qmaq2_5 7___ ___7 r**r qmaq2_5
+qmaq2_5 8___ ___8 r**r qmaq2_5
+qmaq2_5 9___ ___9 r**r qmaq2_5
+qmaq2_5 A___ ___A r**r qmaq2_5
+qmaq2_5 L___ ___L r**r qmaq2_5
+qmaq2_5 R___ ___R r**r qmaq2_5
+qmaq2_5 S___ ___S r**r qmaq2_5
+qmaq2_5 Y___ ___Y r**r qmaq2_5
+qmaq2_5 N___ ___N r**r qmaq2_5
+qmaq2_5 ;___ ___; r**r qmaq_temp2
+
+qmaq_temp2 Q___ Q__Q ***r qmaq2_5
+qmaq_temp2 ____ ____ **** qmaq2_6
+
+qmaq2_6 ____ ____ l*** qmaq2_6
+qmaq2_6 L___ L___ **** qset2
+qmaq2_6 R___ R___ **** qset2
+qmaq2_6 S___ S___ **** qset2
+
+;---------------------------------------------
+qset2 Q___ Q___ l*** qset2
+qset2 A___ A___ l*** qset2
+qset2 S___ S___ l*** qset2
+qset2 R___ R___ l*** qset2
+qset2 L___ L___ l*** qset2
+qset2 0___ 0___ l*** qset2
+qset2 1___ 1___ l*** qset2
+qset2 2___ 2___ l*** qset2
+qset2 3___ 3___ l*** qset2
+qset2 4___ 4___ l*** qset2
+qset2 5___ 5___ l*** qset2
+qset2 6___ 6___ l*** qset2
+qset2 7___ 7___ l*** qset2
+qset2 8___ 8___ l*** qset2
+qset2 9___ 9___ l*** qset2
+qset2 Y___ Y___ l*** qset2
+qset2 N___ N___ l*** qset2
+qset2 ;___ ;___ l*** qset2
+qset2 $___ $___ **** qin
+
+
+;---------------------------------------
+
+qin $___ ____ r*** qin
+qin Q___ Q___ l*** q1
+
+q1 ____ _Q__ rr** q2
+
+q2 Q___ _0__ rr** q4
+q2 ____ _0__ rr** q5
+
+qtemp ____ ____ r*** q5
+
+q4 Q___ QQ__ lr** qtemp
+q4 0___ _0__ rr** q4
+q4 1___ _1__ rr** q4
+q4 2___ _2__ rr** q4
+q4 3___ _3__ rr** q4
+q4 4___ _4__ rr** q4
+q4 5___ _5__ rr** q4
+q4 6___ _6__ rr** q4
+q4 7___ _7__ rr** q4 
+q4 8___ _8__ rr** q4
+q4 9___ _9__ rr** q4
+q4 A___ _A__ rr** q4
+q4 L___ _L__ rr** q4
+q4 R___ _R__ rr** q4
+q4 S___ _S__ rr** q4
+q4 Y___ _Y__ rr** q4
+q4 N___ _N__ rr** q4
+q4 ;___ _;__ rr** qtemp2
+q4 ____ ____ **** q6
+
+q5 Q___ Q___ **** q2
+q5 0___ _0__ rr** q5
+q5 1___ _1__ rr** q5
+q5 2___ _2__ rr** q5
+q5 3___ _3__ rr** q5
+q5 4___ _4__ rr** q5
+q5 5___ _5__ rr** q5
+q5 6___ _6__ rr** q5
+q5 7___ _7__ rr** q5 
+q5 8___ _8__ rr** q5
+q5 9___ _9__ rr** q5
+q5 A___ _A__ rr** q5
+q5 L___ _L__ rr** q5
+q5 R___ _R__ rr** q5
+q5 S___ _S__ rr** q5
+q5 Y___ _Y__ rr** q5
+q5 N___ _N__ rr** q5
+q5 ;___ _;__ rr** qtemp2
+
+qtemp2 Q___ QQ__ *r** q5
+qtemp2 ____ ____ **** q6
+
+q6 ____ ____ l*** q6
+q6 L___ L___ r*** q7
+q6 R___ R___ r*** q7
+q6 S___ S___ r*** q7
+
+
+; copia tudo o que esta no resto da 1a fita
+q7 ____ ____ l*l* q7
+q7 Q___ __Q_ l*l* q7
+q7 A___ __A_ l*l* q7
+q7 S___ __S_ l*l* q7
+q7 R___ __R_ l*l* q7
+q7 L___ __L_ l*l* q7
+q7 0___ __0_ l*l* q7
+q7 1___ __1_ l*l* q7
+q7 2___ __2_ l*l* q7
+q7 3___ __3_ l*l* q7
+q7 4___ __4_ l*l* q7
+q7 5___ __5_ l*l* q7
+q7 6___ __6_ l*l* q7
+q7 7___ __7_ l*l* q7
+q7 8___ __8_ l*l* q7
+q7 9___ __9_ l*l* q7
+q7 ;___ __;_ l*l* q7
+q7 Y___ Y___ **l* q8
+
+q8 Y___ ____ l*** q8
+q8 0___ 0___ r*** qtemp3
+q8 1___ 1___ r*** qtemp3
+q8 2___ 2___ r*** qtemp3
+q8 3___ 3___ r*** qtemp3
+q8 4___ 4___ r*** qtemp3
+q8 5___ 5___ r*** qtemp3
+q8 6___ 6___ r*** qtemp3
+q8 7___ 7___ r*** qtemp3
+q8 8___ 8___ r*** qtemp3
+q8 9___ 9___ r*** qtemp3
+
+qtemp3 ____ ____ *l** qtemp3
+qtemp3 _Q__ _Q__ **** q9 
+qtemp3 _A__ _A__ **** q9
+qtemp3 _S__ _S__ **** q9
+qtemp3 _R__ _R__ **** q9
+qtemp3 _L__ _L__ **** q9
+qtemp3 _0__ _0__ **** q9
+qtemp3 _1__ _1__ **** q9
+qtemp3 _2__ _2__ **** q9
+qtemp3 _3__ _3__ **** q9
+qtemp3 _4__ _4__ **** q9
+qtemp3 _5__ _5__ **** q9
+qtemp3 _6__ _6__ **** q9
+qtemp3 _7__ _7__ **** q9
+qtemp3 _8__ _8__ **** q9
+qtemp3 _9__ _9__ **** q9
+qtemp3 _Y__ _Y__ **** q9
+qtemp3 _N__ _N__ **** q9
+qtemp3 _;__ _;__ **** q9
+
+q9 _Q__ _Q__ *l** q9
+q9 _A__ _A__ *l** q9
+q9 _S__ _S__ *l** q9
+q9 _R__ _R__ *l** q9
+q9 _L__ _L__ *l** q9
+q9 _0__ _0__ *l** q9
+q9 _1__ _1__ *l** q9
+q9 _2__ _2__ *l** q9
+q9 _3__ _3__ *l** q9
+q9 _4__ _4__ *l** q9
+q9 _5__ _5__ *l** q9
+q9 _6__ _6__ *l** q9
+q9 _7__ _7__ *l** q9
+q9 _8__ _8__ *l** q9
+q9 _9__ _9__ *l** q9
+q9 _Y__ _Y__ *l** q9
+q9 _N__ _N__ *l** q9
+q9 _;__ _;__ *l** q9
+q9 ____ ____ *r** q10
+
+q10 _Q__ QQ__ rr** q10
+q10 _A__ _A__ **** q11
+q10 _0__ 00__ rr** q10
+q10 _1__ 11__ rr** q10
+q10 _2__ 22__ rr** q10
+q10 _3__ 33__ rr** q10
+q10 _4__ 44__ rr** q10
+q10 _5__ 55__ rr** q10
+q10 _6__ 66__ rr** q10
+q10 _7__ 77__ rr** q10
+q10 _8__ 88__ rr** q10
+q10 _9__ 99__ rr** q10
+
+q11 _A__ _A__ **r* q11
+q11 _AA_ _AA_ **** q12
+
+q12 _AQ_ QA__ r*r* q12
+q12 _AA_ AA__ r*r* q12
+q12 _AS_ SA__ r*r* q12
+q12 _AR_ RA__ r*r* q12
+q12 _AL_ LA__ r*r* q12
+q12 _A0_ 0A__ r*r* q12
+q12 _A1_ 1A__ r*r* q12
+q12 _A2_ 2A__ r*r* q12
+q12 _A3_ 3A__ r*r* q12
+q12 _A4_ 4A__ r*r* q12
+q12 _A5_ 5A__ r*r* q12
+q12 _A6_ 6A__ r*r* q12
+q12 _A7_ 7A__ r*r* q12
+q12 _A8_ 8A__ r*r* q12
+q12 _A9_ 9A__ r*r* q12
+q12 _AY_ YA__ r*r* q12
+q12 _AN_ NA__ r*r* q12
+q12 _A;_ ;A__ r*r* q12
+q12 _A__ _A__ **** q13
+
+q13 _A__ _A__ *l** q13
+q13 _Q__ _Q__ *l** q13
+q13 _0__ _0__ *l** q13
+q13 _1__ _1__ *l** q13
+q13 _2__ _2__ *l** q13
+q13 _3__ _3__ *l** q13
+q13 _4__ _4__ *l** q13
+q13 _5__ _5__ *l** q13
+q13 _6__ _6__ *l** q13
+q13 _7__ _7__ *l** q13
+q13 _8__ _8__ *l** q13
+q13 _9__ _9__ *l** q13
+q13 ____ ____ *r** q14
+
+q14 _Q__ _Q__ l*** q15
+
+q15 QQ__ _QQ_ l*l* q15
+q15 AQ__ _QA_ l*l* q15
+q15 SQ__ _QS_ l*l* q15
+q15 RQ__ _QR_ l*l* q15
+q15 LQ__ _QL_ l*l* q15
+q15 0Q__ _Q0_ l*l* q15
+q15 1Q__ _Q1_ l*l* q15
+q15 2Q__ _Q2_ l*l* q15
+q15 3Q__ _Q3_ l*l* q15
+q15 4Q__ _Q4_ l*l* q15
+q15 5Q__ _Q5_ l*l* q15
+q15 6Q__ _Q6_ l*l* q15
+q15 7Q__ _Q7_ l*l* q15
+q15 8Q__ _Q8_ l*l* q15
+q15 9Q__ _Q9_ l*l* q15
+q15 ;Q__ _Q;_ l*l* q15
+q15 NQ__ NQ__ **** q16
+q15 _Q__ _Q__ r*** q23
+
+q16 NQ__ _Q__ l*** q16
+q16 0Q__ 0Q__ r*** q17
+q16 1Q__ 1Q__ r*** q17
+q16 2Q__ 2Q__ r*** q17
+q16 3Q__ 3Q__ r*** q17
+q16 4Q__ 4Q__ r*** q17
+q16 5Q__ 5Q__ r*** q17
+q16 6Q__ 6Q__ r*** q17
+q16 7Q__ 7Q__ r*** q17
+q16 8Q__ 8Q__ r*** q17
+q16 9Q__ 9Q__ r*** q17
+
+q17 _Q__ _Q__ ***l q18
+
+q18 _Q_Q _Q_Q ***l q18
+q18 _Q_A _Q_A ***l q18
+q18 _Q_0 _Q_0 ***l q18
+q18 _Q_1 _Q_1 ***l q18
+q18 _Q_2 _Q_2 ***l q18
+q18 _Q_3 _Q_3 ***l q18
+q18 _Q_4 _Q_4 ***l q18
+q18 _Q_5 _Q_5 ***l q18
+q18 _Q_6 _Q_6 ***l q18
+q18 _Q_7 _Q_7 ***l q18
+q18 _Q_8 _Q_8 ***l q18
+q18 _Q_9 _Q_9 ***l q18
+q18 _Q_R _Q_R ***l q18
+q18 _Q_L _Q_L ***l q18
+q18 _Q_S _Q_S ***l q18
+q18 _Q_Y _Q_Y ***l q18
+q18 _Q_N _Q_N ***l q18
+q18 _Q_; _Q_; ***l q18
+q18 _Q__ _Q__ ***r qspace
+
+qspace _Q__ _Q__ ***r qspace
+qspace _Q_Q _Q_Q **** q19
+
+q19 _Q_Q QQ_Q r**r q19
+q19 _Q_0 0Q_0 r**r q19
+q19 _Q_1 1Q_1 r**r q19
+q19 _Q_2 2Q_2 r**r q19
+q19 _Q_3 3Q_3 r**r q19
+q19 _Q_4 4Q_4 r**r q19
+q19 _Q_5 5Q_5 r**r q19
+q19 _Q_6 6Q_6 r**r q19
+q19 _Q_7 7Q_7 r**r q19
+q19 _Q_8 8Q_8 r**r q19
+q19 _Q_9 9Q_9 r**r q19
+q19 _Q_A _Q_A **** q20
+
+q20 _Q_A _Q_A **r* q21
+
+q21 _QQA QQ_A r*r* q21
+q21 _QAA AQ_A r*r* q21
+q21 _QLA LQ_A r*r* q21
+q21 _QRA RQ_A r*r* q21
+q21 _QSA SQ_A r*r* q21
+q21 _Q;A ;Q_A r*r* q21
+q21 _Q0A 0Q_A r*r* q21
+q21 _Q1A 1Q_A r*r* q21
+q21 _Q2A 2Q_A r*r* q21
+q21 _Q3A 3Q_A r*r* q21
+q21 _Q4A 4Q_A r*r* q21
+q21 _Q5A 5Q_A r*r* q21
+q21 _Q6A 6Q_A r*r* q21
+q21 _Q7A 7Q_A r*r* q21
+q21 _Q8A 8Q_A r*r* q21
+q21 _Q9A 9Q_A r*r* q21
+q21 _Q_A _Q_A **** q22
+
+q22 _Q_A _Q_A ***l q22
+q22 _Q_Q _Q_Q ***l q22
+q22 _Q_0 _Q_0 ***l q22
+q22 _Q_1 _Q_1 ***l q22
+q22 _Q_2 _Q_2 ***l q22
+q22 _Q_3 _Q_3 ***l q22
+q22 _Q_4 _Q_4 ***l q22
+q22 _Q_5 _Q_5 ***l q22
+q22 _Q_6 _Q_6 ***l q22
+q22 _Q_7 _Q_7 ***l q22
+q22 _Q_8 _Q_8 ***l q22
+q22 _Q_9 _Q_9 ***l q22
+q22 _Q__ _Q__ l*** q15
+
+q23 _Q__ _Q__ **r* q24
+
+q24 _QQ_ QQ__ r*r* q24
+q24 _QA_ AQ__ r*r* q24
+q24 _QR_ RQ__ r*r* q24
+q24 _QL_ LQ__ r*r* q24
+q24 _QS_ SQ__ r*r* q24
+q24 _Q;_ ;Q__ r*r* q24
+q24 _Q0_ 0Q__ r*r* q24
+q24 _Q1_ 1Q__ r*r* q24
+q24 _Q2_ 2Q__ r*r* q24
+q24 _Q3_ 3Q__ r*r* q24
+q24 _Q4_ 4Q__ r*r* q24
+q24 _Q5_ 5Q__ r*r* q24
+q24 _Q6_ 6Q__ r*r* q24
+q24 _Q7_ 7Q__ r*r* q24
+q24 _Q8_ 8Q__ r*r* q24
+q24 _Q9_ 9Q__ r*r* q24
+q24 _Q__ _Q__ **r* q25
+
+q25 _Q__ _Q__ ***r q25
+q25 _Q_Q _Q_Q **** q26
+
+q26 _Q_Q _QQ_ **rr q26
+q26 _Q_; _Q;_ **rr q26
+q26 _Q_A _QA_ **rr q26
+q26 _Q_Y _QY_ **rr q26
+q26 _Q_N _QN_ **rr q26
+q26 _Q_R _QR_ **rr q26
+q26 _Q_L _QL_ **rr q26
+q26 _Q_S _QS_ **rr q26
+q26 _Q_0 _Q0_ **rr q26
+q26 _Q_1 _Q1_ **rr q26
+q26 _Q_2 _Q2_ **rr q26
+q26 _Q_3 _Q3_ **rr q26
+q26 _Q_4 _Q4_ **rr q26
+q26 _Q_5 _Q5_ **rr q26
+q26 _Q_6 _Q6_ **rr q26
+q26 _Q_7 _Q7_ **rr q26
+q26 _Q_8 _Q8_ **rr q26
+q26 _Q_9 _Q9_ **rr q26
+q26 _Q__ _Q__ **** q27
+
+q27 _Q__ _Q__ **l* q28
+
+q28 _QR_ _QR_ **l* q28
+q28 _Q;_ _Q;_ **l* q28
+q28 _QL_ _QL_ **l* q28
+q28 _QS_ _QS_ **l* q28
+q28 _QQ_ _QQ_ **l* q28
+q28 _QA_ _QA_ **l* q28
+q28 _QY_ _QY_ **l* q28
+q28 _QN_ _QN_ **l* q28
+q28 _Q0_ _Q0_ **l* q28
+q28 _Q1_ _Q1_ **l* q28
+q28 _Q2_ _Q2_ **l* q28
+q28 _Q3_ _Q3_ **l* q28
+q28 _Q4_ _Q4_ **l* q28
+q28 _Q5_ _Q5_ **l* q28
+q28 _Q6_ _Q6_ **l* q28
+q28 _Q7_ _Q7_ **l* q28
+q28 _Q8_ _Q8_ **l* q28
+q28 _Q9_ _Q9_ **l* q28
+q28 _Q__ _Q__ **r* q29
+
+q29 _QQ_ _QQ_ l*** q30
+
+q30 QQQ_ QQQ_ l*** q30
+q30 LQQ_ LQQ_ l*** q30
+q30 RQQ_ RQQ_ l*** q30
+q30 SQQ_ SQQ_ l*** q30
+q30 AQQ_ AQQ_ l*** q30
+q30 ;QQ_ ;QQ_ l*** q30
+q30 0QQ_ 0QQ_ l*** q30
+q30 1QQ_ 1QQ_ l*** q30
+q30 2QQ_ 2QQ_ l*** q30
+q30 3QQ_ 3QQ_ l*** q30
+q30 4QQ_ 4QQ_ l*** q30
+q30 5QQ_ 5QQ_ l*** q30
+q30 6QQ_ 6QQ_ l*** q30
+q30 7QQ_ 7QQ_ l*** q30
+q30 8QQ_ 8QQ_ l*** q30
+q30 9QQ_ 9QQ_ l*** q30
+q30 _QQ_ _QQ_ r*** q31
+
+q31 QQQ_ QQQQ r**r q31 
+q31 LQQ_ LQQL r**r q31
+q31 RQQ_ RQQR r**r q31
+q31 SQQ_ SQQS r**r q31
+q31 AQQ_ AQQA r**r q31
+q31 ;QQ_ ;QQ; r**r q31
+q31 0QQ_ 0QQ0 r**r q31
+q31 1QQ_ 1QQ1 r**r q31
+q31 2QQ_ 2QQ2 r**r q31
+q31 3QQ_ 3QQ3 r**r q31
+q31 4QQ_ 4QQ4 r**r q31
+q31 5QQ_ 5QQ5 r**r q31
+q31 6QQ_ 6QQ6 r**r q31
+q31 7QQ_ 7QQ7 r**r q31
+q31 8QQ_ 8QQ8 r**r q31
+q31 9QQ_ 9QQ9 r**r q31
+q31 _QQ_ _QQ; ***r q32
+
+q32 _QQ_ _QQQ *r*r q32
+q32 _AQ_ _AQA *r*r q32
+q32 _LQ_ _LQL *r*r q32
+q32 _RQ_ _RQR *r*r q32
+q32 _SQ_ _SQS *r*r q32
+q32 _YQ_ _YQY *r*r q32
+q32 _NQ_ _NQN *r*r q32
+q32 _;Q_ _;Q; *r*r q32
+q32 _0Q_ _0Q0 *r*r q32
+q32 _1Q_ _1Q1 *r*r q32
+q32 _2Q_ _2Q2 *r*r q32
+q32 _3Q_ _3Q3 *r*r q32
+q32 _4Q_ _4Q4 *r*r q32
+q32 _5Q_ _5Q5 *r*r q32
+q32 _6Q_ _6Q6 *r*r q32
+q32 _7Q_ _7Q7 *r*r q32
+q32 _8Q_ _8Q8 *r*r q32
+q32 _9Q_ _9Q9 *r*r q32
+q32 __Q_ __Q; *r*r q33
+
+q33 __Q_ __QQ **rr q33
+q33 __A_ __AA **rr q33
+q33 __L_ __LL **rr q33
+q33 __R_ __RR **rr q33
+q33 __S_ __SS **rr q33
+q33 __Y_ __YY **rr q33
+q33 __N_ __NN **rr q33
+q33 __;_ __;; **rr q33
+q33 __0_ __00 **rr q33
+q33 __1_ __11 **rr q33
+q33 __2_ __22 **rr q33
+q33 __3_ __33 **rr q33
+q33 __4_ __44 **rr q33
+q33 __5_ __55 **rr q33
+q33 __6_ __66 **rr q33
+q33 __7_ __77 **rr q33
+q33 __8_ __88 **rr q33
+q33 __9_ __99 **rr q33
+q33 ____ ____ ***l q34
+
+q34 ___Q ___Q ***l q34
+q34 ___A ___A ***l q34
+q34 ___L ___L ***l q34
+q34 ___R ___R ***l q34
+q34 ___S ___S ***l q34
+q34 ___Y ___Y ***l q34
+q34 ___N ___N ***l q34
+q34 ___; ___; ***l q34
+q34 ___0 ___0 ***l q34
+q34 ___1 ___1 ***l q34
+q34 ___2 ___2 ***l q34
+q34 ___3 ___3 ***l q34
+q34 ___4 ___4 ***l q34
+q34 ___5 ___5 ***l q34
+q34 ___6 ___6 ***l q34
+q34 ___7 ___7 ***l q34
+q34 ___8 ___8 ***l q34
+q34 ___9 ___9 ***l q34
+q34 ____ ____ ***r halt-accept
